@@ -1,0 +1,44 @@
+{
+  "npmScope": "mim-sitter",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
+    "mim-sitter-app": {
+      "tags": []
+    },
+    "mim-sitter-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mim-sitter-app"]
+    }
+  }
+}
