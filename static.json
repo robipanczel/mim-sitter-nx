@@ -5,7 +5,7 @@
   },
   "proxies": {
     "/api/": {
-      "origin": "https://ktrz-nx-photos-api.herokuapp.com/api/"
+      "origin": "https://mim-sitter-api.herokuapp.com/api/"
     }
   }
 }
