@@ -1,5 +1,5 @@
 {
-  "root": "dist/apps/photo/fe/",
+  "root": "dist/apps/mim-sitter-app/",
   "routes": {
     "/**/*.html": "index.html"
   },
